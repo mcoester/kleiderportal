@@ -1,0 +1,154 @@
+.firstRow {
+    background-image: url('../pexels-nietjuhart-934070.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.headerColor {
+    color: #1C3680;
+}
+
+.textColor {
+    color: #1C3680 !important;
+}
+
+.heightCl {
+    height: 6rem;
+}
+
+.footerHeightCl {
+    height: 2rem;
+}
+
+.heightHeader {
+    height: 16rem;
+}
+
+.bgColor {
+    background-color: #E2EAFF;
+}
+
+.bgColorNav {
+    background-color: #E2EAFF;
+}
+
+.button-bg {
+    background-color: #1C3680 !important;
+}
+
+.button-bg:hover {
+    background-color: #16306a !important;
+}
+
+.formHeight {
+    height: 50rem;
+}
+
+.heightButton{
+    height: 25%;
+}
+
+.widthButton{
+    width: 90%
+}
+
+.validationError {
+    border: 1px solid red !important;
+}
+
+.validationMsg {
+    color: red;
+}
+
+.validationSize {
+    font-size: 14px;
+}
+
+.changeButton {
+    background-color: #768FD4 !important;
+
+}
+
+.changeButton:hover{
+    background-color: #637dc5  !important;
+}
+
+.h-20 {
+    height: 20%;
+}
+
+@media only screen and (max-width:767px){
+    .fs-sm{
+        font-size: 15px !important;
+    }
+    .btVert-alignment{
+        width: 100% !important;
+        align-items: center !important;
+    }
+    .h-40{
+        height: 40% !important;
+    }
+    .h-30{
+        height: 30% !important;
+    }
+
+}
+
+.container-border {
+    border: 1px solid #E2EAFF;
+}
+
+.play-pause-button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+    border-width: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff00;
+    z-index: 1;
+}
+
+#img-button {
+    display: none;
+}
+
+.pre-back-button  {
+    z-index: 2;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-40 {
+    width: 40% !important;
+}  
+
+@media only screen and (max-width: 426px){
+    .w-425-100{
+        width: 100% !important;
+    }
+    .my-425 {
+        margin: 5px 0 5px !important;
+    }
+}
+
+.list-no-points {
+    list-style: none;
+}
+
+.footer-border-color {
+    border-color: #1C3680 !important;
+}
+
+@media only screen and (max-width: 426px){
+    .fs-425-screen{
+        font-size: 14px !important;
+    }
+}
