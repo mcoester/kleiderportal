@@ -39,12 +39,12 @@ const [isHigherFive, setIsHigherFive] = useState(false);
 const [isEqual, setIsEqual] = useState(false);
 const [isTwoLetters, setIsTwoLetters] = useState(false);
 
-
+//Hier wird ein key berechnet. Die Berechnungen sind nicht notwendig. Welcher key verwendet wird spielt für diese Anwendung keine Rolle.
 const PHI = (1 + Math.sqrt(5)) / 2;
-const h = (Math.floor(22118*((27/PHI) - Math.floor(27/PHI)))).toString();
+const key = (Math.floor(22118*((27/PHI) - Math.floor(27/PHI)))).toString();
 
 useEffect(() =>{
-    const jsonData = localStorage.getItem(h);
+    const jsonData = localStorage.getItem(key);
     if(jsonData){
         const data = JSON.parse(jsonData);
         setSelection(data.homeOrOffice);
@@ -85,8 +85,8 @@ switch(page){
 }
 
   return (
-    <Wrapper inputError={inputError} setInputError={setInputError} firstSelError={firstSelError} setFirstSelError={setFirstSelError} secondSelError={secondSelError} setSecondSelError={setSecondSelError} setIsRegistered={setIsRegistered} isRegisteredWrapper={isRegisteredWrapper} setIsRegisteredWrapper={setIsRegisteredWrapper} togglePage={setPage} x={h} select={setSelection} selected={selection} >
-        <LayoutComponent setIsRegisteredWrapper={setIsRegisteredWrapper} deliveryText={deliveryText} setDeliveryText={setDeliveryText} isHigherFive={isHigherFive} setIsHigherFive={setIsHigherFive} isTwoLetters={isTwoLetters} setIsTwoLetters={setIsTwoLetters} isEqual={isEqual} setIsEqual={setIsEqual} inputError={inputError} setInputError={setInputError} PLZ={PLZ} setPLZ={setPLZ} city={city} setCity={setCity} street={street} setStreet={setStreet} number={number} setNumber={setNumber} isRegistered={isRegistered} setIsRegistered={setIsRegistered} firstSelError={firstSelError} setFirstSelError={setFirstSelError} secondSelError={secondSelError} setSecondSelError={setSecondSelError} togglePage={setPage} x={h} location={location} setLocation={setLocation} select={setSelection} selected={selection} typeOfClothing={typeOfClothing} setTypeOfClothing={setTypeOfClothing} crisisArea={crisisArea} setCrisisArea={setCrisisArea} />
+    <Wrapper inputError={inputError} setInputError={setInputError} firstSelError={firstSelError} setFirstSelError={setFirstSelError} secondSelError={secondSelError} setSecondSelError={setSecondSelError} setIsRegistered={setIsRegistered} isRegisteredWrapper={isRegisteredWrapper} setIsRegisteredWrapper={setIsRegisteredWrapper} togglePage={setPage} x={key} select={setSelection} selected={selection} >
+        <LayoutComponent setIsRegisteredWrapper={setIsRegisteredWrapper} deliveryText={deliveryText} setDeliveryText={setDeliveryText} isHigherFive={isHigherFive} setIsHigherFive={setIsHigherFive} isTwoLetters={isTwoLetters} setIsTwoLetters={setIsTwoLetters} isEqual={isEqual} setIsEqual={setIsEqual} inputError={inputError} setInputError={setInputError} PLZ={PLZ} setPLZ={setPLZ} city={city} setCity={setCity} street={street} setStreet={setStreet} number={number} setNumber={setNumber} isRegistered={isRegistered} setIsRegistered={setIsRegistered} firstSelError={firstSelError} setFirstSelError={setFirstSelError} secondSelError={secondSelError} setSecondSelError={setSecondSelError} togglePage={setPage} x={key} location={location} setLocation={setLocation} select={setSelection} selected={selection} typeOfClothing={typeOfClothing} setTypeOfClothing={setTypeOfClothing} crisisArea={crisisArea} setCrisisArea={setCrisisArea} />
     </Wrapper>
   );
 }

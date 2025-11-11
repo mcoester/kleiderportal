@@ -1,41 +1,4 @@
-import React, { useEffect } from 'react';
-
-
 function Landingpage({ togglePage }){
-    //const imgButton = document.getElementById('img-button')
-    // const showButton = () =>{
-    //         // imgButton.style.display = 'inline';
-    //         setIsMouseOver(true);
-    //     };
-        
-    //     const hideButton = () =>{
-    //         setIsMouseOver(false);
-    //     }
-    // useEffect(() =>{
-    //     const imgCarousel = document.getElementById('myCarousel');
-    //     const [playPauseButton] = document.getElementsByClassName('play-pause-button');
-
-    //     playPauseButton.addEventListener('click', () =>{
-    //         if(play) {
-    //             imgButton.style.backgroundImage = 'url(/Play_NoBorder.png)';
-    //             setPlay(false);
-                
-    //         } else {
-    //             imgButton.style.backgroundImage = 'url(/Pause_NoBorder.png)';
-    //             setPlay(true);
-    //         }
-    //     });
-
-    // },[]);
-
-    // const handlePlayPauseClick = () =>{
-    //     if(!paused){
-    //         setPaused(true);
-    //     } else {
-    //         setPaused(false);
-    //     } ;
-    // }
-    
     const handleClick = () =>{
         togglePage('regorchange');
     }
