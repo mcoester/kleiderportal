@@ -19,25 +19,27 @@ function NoteOfThanks({ x }){
                     </div>
                 </div>
                 <div className='row h-75 m-0 align-items-start'>
-                    <div className='col mt-3 p-0'>
-                        <div className='row h-50 p-0 m-0'>
-                            <div className='col-6 d-flex flex-column align-items-end fs-5 fs-sm text-end'>
-                                <p className='h-20 text-nowrap'>Art der Kleidung:</p>
-                                <p className='h-20'>Zielort der Spende:</p>
-                                <p className='h-20'>Ort:</p>
-                                <p className='h-20'>Datum:</p>
-                                <p className='h-20'>Uhrzeit:</p>
-                                <p className='h-20'>Übergabe:</p>
+                    <div className='col mt-3 p-0 h-100'>
+                        <dl className='h-75'>
+                            <div className='row h-50 p-0 m-0'>
+                                <div className='col-6 d-flex flex-column align-items-end fs-5 fs-sm text-end'>
+                                    <dt className='h-20 text-nowrap fw-normal'>Art der Kleidung:</dt>
+                                    <dt className='h-20 fw-normal'>Zielort der Spende:</dt>
+                                    <dt className='h-20 fw-normal'>Ort:</dt>
+                                    <dt className='h-20 fw-normal'>Datum:</dt>
+                                    <dt className='h-20 fw-normal'>Uhrzeit:</dt>
+                                    <dt className='h-20 fw-normal'>Übergabe:</dt>
+                                </div>
+                                <div className='col-6 fs-5 fs-sm d-flex flex-column align-items-start'>
+                                    <dd className='h-20'>{data.kleidung}</dd>
+                                    <dd className='h-20'>{data.krisengebiet}</dd>
+                                    <dd className='h-20'>{data.ort}</dd>
+                                    <dd className='h-20'>{fullDate}</dd>
+                                    <dd className='h-20'>{time}</dd>
+                                    <dd className='h-20'>{data.übergabe}</dd>
+                                </div>
                             </div>
-                            <div className='col-6 fs-5 fs-sm d-flex flex-column align-items-start'>
-                                <p className='h-20'>{data.kleidung}</p>
-                                <p className='h-20'>{data.krisengebiet}</p>
-                                <p className='h-20'>{data.ort}</p>
-                                <p className='h-20'>{fullDate}</p>
-                                <p className='h-20'>{time}</p>
-                                <p className='h-20'>{data.übergabe}</p>
-                            </div>
-                        </div>
+                        </dl>
                     </div>
                 </div>
             </div>   

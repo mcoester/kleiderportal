@@ -27,18 +27,18 @@ function RegOrChange({ togglePage, selected, isRegistered, setIsRegistered, setI
         <>
             <div className='row ps-4 mt-5'>
                 <div className='col-2 d-flex align-items-center'>
-                    <button onClick={handleRegClick} type="button" className="btn btn-primary button-bg fw-semibold fs-5 h-md-75 d-flex align-items-center ">+</button>
+                    <button aria-labelledby='newReg' onClick={handleRegClick} type="button" className="btn btn-primary button-bg fw-semibold fs-5 h-md-75 d-flex align-items-center ">+</button>
                 </div>
                 <div className='col-8 d-flex align-items-center'>
-                    <p className='fs-2 d-flex mb-0 mx-3'>Neue Registrierung</p>
+                    <span id='newReg' className='fs-2 d-flex mb-0 mx-3'>Neue Registrierung</span>
                 </div>
             </div>
             <div className='row mt-5 ps-4' id='registry'>
                 <div className='col-2 d-flex align-items-center'>
-                    <button onClick={handleChangeClick} type="button" className="btn btn-primary button-bg fw-semibold fs-5 h-md-75 d-flex align-items-center">+</button>
+                    <button aria-labelledby='existingReg' onClick={handleChangeClick} type="button" className="btn btn-primary button-bg fw-semibold fs-5 h-md-75 d-flex align-items-center">+</button>
                 </div>
                 <div className='col-8 d-flex align-items-center'>
-                    <p className='fs-2 mb-0 mx-3'>Bestehende Registrierung</p>
+                    <span id='existingReg' className='fs-2 mb-0 mx-3'>Bestehende Registrierung</span>
                 </div>
             </div>
             <div className='row'>

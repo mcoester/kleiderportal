@@ -1,17 +1,23 @@
 import React from 'react';
 
-function Wrapper({ children, togglePage, selected, isRegisteredWrapper, setIsRegisteredWrapper, setIsRegistered }){ 
+function Wrapper({  inputError, setInputError, firstSelError, secondSelError, setFirstSelError, setSecondSelError, children, togglePage, selected, isRegisteredWrapper, setIsRegisteredWrapper, setIsRegistered }){ 
 
     const handleHomeClick = () =>{
         togglePage('landingpage');
         setIsRegisteredWrapper(true);
         setIsRegistered(true);
+        if(firstSelError) setFirstSelError(false);
+        if(secondSelError) setSecondSelError(false);
+        if(inputError) setInputError(false);
     }
     
     const handleSupportClick = () =>{
         togglePage('regorchange');
         setIsRegisteredWrapper(true);
         setIsRegistered(true);
+        if(firstSelError) setFirstSelError(false);
+        if(secondSelError) setSecondSelError(false);
+        if(inputError) setInputError(false);
     };
 
     const handleRegistryClick = () =>{
@@ -21,11 +27,15 @@ function Wrapper({ children, togglePage, selected, isRegisteredWrapper, setIsReg
         } else {
             setIsRegisteredWrapper(false);
         }  
+        if(firstSelError) setFirstSelError(false);
+        if(secondSelError) setSecondSelError(false);
+        if(inputError) setInputError(false);
     }
 
     return (
     <div className="container d-flex flex-column min-vh-100 container-border">
         <header>
+            {/* Background-image by Ylanite Koppens Kloppens via Pexels - "https://www.pexels.com/de-de/foto/schwarz-gerahmte-brille-auf-weisser-jacke-und-blauen-jeanshosen-934070/" */}
             <div className="row firstRow heightHeader">
                 <div className="col p-0">
                     <h1 className="display-1 text-center fw-bold headerColor bgColor">Kleiderportal</h1>

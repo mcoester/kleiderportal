@@ -31,7 +31,7 @@ function Registry_Selection({setDeliveryText, setLocation, togglePage, select, s
             <div className='col-sm-8 col-11 bgColor rounded-5'>
                 <div className='row h-25 align-items-center'>
                     <div className='col'>
-                        <h3 className='text-center h2'>Registrierung von Kleiderspenden</h3>
+                        <h2 className='text-center h2'>Registrierung von Kleiderspenden</h2>
                     </div>
                 </div>
                 <div className='row h-75 pt-5'>

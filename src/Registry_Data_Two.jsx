@@ -27,27 +27,29 @@ function Registry_Data_Two({ x, togglePage }){
                     </div>
                 </div>
                 <div className='row h-75 m-0 align-items-start'>
-                    <div className='col'>
-                        <div className='row h-50 p-0 m-0'>
-                            <div className='col-6 d-flex flex-column align-items-end fs-5 fs-sm text-end'>
-                                <p className='h-20 text-nowrap'>Art der Kleidung:</p>
-                                <p className='h-20 text-nowrap'>Zielort der Spende:</p>
-                                <p className='h-20'>Ort:</p>
-                                <p className='h-20'>Datum:</p>
-                                <p className='h-20'>Uhrzeit:</p>
-                                <p className='h-20'>Übergabe:</p>
+                    <div className='col h-50'>
+                        <dl className='h-75'>
+                            <div className='row h-50 p-0 m-0'>
+                                <div className='col-6 d-flex flex-column align-items-end fs-5 fs-sm text-end'>
+                                    <dt className='h-20 text-nowrap fw-normal'>Art der Kleidung:</dt>
+                                    <dt className='h-20 text-nowrap fw-normal'>Zielort der Spende:</dt>
+                                    <dt className='h-20 fw-normal'>Ort:</dt>
+                                    <dt className='h-20 fw-normal'>Datum:</dt>
+                                    <dt className='h-20 fw-normal'>Uhrzeit:</dt>
+                                    <dt className='h-20 fw-normal'>Übergabe:</dt>
+                                </div>
+                                <div className='col-6 fs-5 fs-sm d-flex flex-column align-items-start'>
+                                    <dd className='h-20'>{data.kleidung}</dd>
+                                    <dd className='h-20'>{data.krisengebiet}</dd>
+                                    <dd className='h-20'>{data.ort}</dd>
+                                    <dd className='h-20'>{fullDate}</dd>
+                                    <dd className='h-20'>{time}</dd>
+                                    <dd className='h-20'>{data.übergabe}</dd>
+                                </div>
                             </div>
-                            <div className='col-6 fs-5 fs-sm d-flex flex-column align-items-start'>
-                                <p className='h-20'>{data.kleidung}</p>
-                                <p className='h-20'>{data.krisengebiet}</p>
-                                <p className='h-20'>{data.ort}</p>
-                                <p className='h-20'>{fullDate}</p>
-                                <p className='h-20'>{time}</p>
-                                <p className='h-20'>{data.übergabe}</p>
-                            </div>
-                        </div>
-                        <div className='col-12 h-100'>
-                            <div className='row h-50 p-0 m-0 h-30'>
+                        </dl>
+                        <div className='col-12 h-50'>
+                            <div className='row h-50 p-0 m-0'>
                                 <div className='col-6 d-flex flex-column align-items-center btVert-alignment mt-5'>
                                     <button onClick={handleChangeClick} type='button' className='btn btn-primary changeButton w-50 px-0 text-center fs-sm'>Ändern</button>
                                 </div>
